@@ -30,11 +30,12 @@ function dataobject:OnEnter()
 	local n = 0
 	for name in pairs(core.db.global.mobs_byzone[zone]) do
 		n = n + 1
-		local num_locations, level, elite, creature_type, lastseen, count, id, tameable = core:GetMob(zone, name)
+		local num_locations, level, elite, creature_type, respawn, lastseen, count, id, tameable = core:GetMob(zone, name)
 		local cached = id and core.already_cached[id]
 		tooltip:AddLine(name,
 			("%s%s"):format((level and level > 0) and level or '?', elite and '+' or ''),
 			BCT[creature_type],
+			respawn,
 			count,
 			core:FormatLastSeen(lastseen),
 			(tameable and 'Tameable' or '') .. ((tameable and cached) and ', ' or '') .. (cached and 'Cached' or '')

@@ -75,7 +75,7 @@ function module:ShowFrame()
 	local zone, name, unit = current.zone, current.name, current.unit
 	if not (zone and name) then return end
 
-	local num_locations, level, elite, creature_type, lastseen, count, id, tameable = core:GetMob(zone, name)
+	local num_locations, level, elite, creature_type, respawn, lastseen, count, id, tameable = core:GetMob(zone, name)
 	local popup = self.popup
 	popup:SetAttribute("macrotext", "/cleartarget\n/targetexact "..name)
 	popup:Enable()
@@ -84,7 +84,7 @@ function module:ShowFrame()
 	self:ShowModel()
 
 	popup:SetText(name)
-	popup.details:SetText(("%s%s %s"):format(level or '??', elite and '+' or '', creature_type and BCT[creature_type] or ''))
+	popup.details:SetText(("%s%s %s"):format(level or '??', elite and '+' or '', creature_type and BCT[creature_type] or '', respawn))
 
 	local model = popup.model
 end

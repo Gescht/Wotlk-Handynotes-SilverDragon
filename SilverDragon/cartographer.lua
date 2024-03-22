@@ -27,17 +27,17 @@ end
 
 function module:OnNoteTooltipRequest(zone, id, data, inMinimap)
 	zone = core.zone_to_mapfile[zone]
-	local _, level, elite, creature_type, lastseen = core:GetMob(zone, data.title)
+	local _, level, elite, creature_type, respawn, lastseen = core:GetMob(zone, data.title)
 	local cat = tablet:AddCategory('text', data.title, 'justify', 'CENTER')
-	cat:AddLine('text', ("%s%s %s"):format(level or '??', elite and '+' or '', creature_type or UNKNOWN))
+	cat:AddLine('text', ("%s%s %s"):format(level or '??', elite and '+' or '', creature_type or UNKNOWN, respawn))
 	cat:AddLine('text', "Last seen: "..core:FormatLastSeen(lastseen))
 end
 
 function module:OnNoteTooltipLineRequest(zone, id, data, inMinimap)
 	zone = core.zone_to_mapfile[zone]
 	--if not zone or not core.db.global.mobs_byzone[zone][data.title] then return end
-	local _, level, elite, creature_type, lastseen = core:GetMob(zone, data.title)
-	return 'text', ("%s: %s%s, %s, %s"):format(data.title, level or '??', elite and '+' or '', creature_type or UNKNOWN, core:FormatLastSeen(lastseen))
+	local _, level, elite, creature_type, respawn, lastseen = core:GetMob(zone, data.title)
+	return 'text', ("%s: %s%s, %s, %s"):format(data.title, level or '??', elite and '+' or '', creature_type or UNKNOWN, respawn, core:FormatLastSeen(lastseen))
 end
 
 function module:Seen(callback, zone, name, x, y, dead, new_location)

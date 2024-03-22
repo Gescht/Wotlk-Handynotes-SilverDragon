@@ -36,9 +36,10 @@ function handler:OnEnter(mapFile, coord)
 	else
 		tooltip:SetOwner(self, "ANCHOR_RIGHT")
 	end
-	local name, _, level, elite, creature_type, lastseen = core:GetMobByCoord(mapFile, coord)
+	local name, _, level, elite, creature_type, respawntime, lastseen = core:GetMobByCoord(mapFile, coord)
 	tooltip:AddLine(name)
 	tooltip:AddDoubleLine(("%s%s"):format(level or '??', elite and '+' or ''), creature_type or UNKNOWN)
+	tooltip:AddDoubleLine("Respawntime: ", respawntime)
 	tooltip:AddDoubleLine("Last seen", core:FormatLastSeen(lastseen))
 	tooltip:Show()
 end
