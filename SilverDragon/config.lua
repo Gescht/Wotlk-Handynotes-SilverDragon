@@ -77,17 +77,17 @@ local options = {
 			hidden = function()
 				return not ( core:GetModule("Data", true) or select(5, GetAddOnInfo("SilverDragon_Data")) )
 			end,
-			order = 10,
+			order = 20,
 			args = {
 				desc = {
 					order = 0,
 					type = "description",
 					name = "SilverDragon comes with a pre-built database of known locations of rare mobs. Click the button below to import the data.",
 				},
-				load = {
+				loada = {
 					order = 10,
 					type = "execute",
-					name = "Import Data",
+					name = "Import AzerothCore",
 					func = function()
 						LoadAddOn("SilverDragon_Data")
 						local Data = core:GetModule("Data", true)
@@ -95,7 +95,23 @@ local options = {
 							module:Print("Database not found. Aborting import.") -- safety check, just in case.
 							return
 						end
-						local count = Data:Import()
+						local count = Data:Import("ac")
+						core.events:Fire("Import")
+						module:Print(("Imported %d rares."):format(count))
+					end,
+				},
+				loadt = {
+					order = 20,
+					type = "execute",
+					name = "Import TrinityCore",
+					func = function()
+						LoadAddOn("SilverDragon_Data")
+						local Data = core:GetModule("Data", true)
+						if not Data then
+							module:Print("Database not found. Aborting import.") -- safety check, just in case.
+							return
+						end
+						local count = Data:Import("tc")
 						core.events:Fire("Import")
 						module:Print(("Imported %d rares."):format(count))
 					end,

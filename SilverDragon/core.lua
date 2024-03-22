@@ -20,9 +20,7 @@ function addon:OnInitialize()
 			mob_type = {},
 			mob_level = {},
 			mob_elite = {},
-			mob_respawn = {
-				['*'] = {}, -- respawn times
-			},
+			mob_respawn = {},
 			mob_tameable = {},
 			mob_count = {
 				['*'] = 0,

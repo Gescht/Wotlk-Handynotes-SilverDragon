@@ -37,12 +37,6 @@ function handler:OnEnter(mapFile, coord)
 		tooltip:SetOwner(self, "ANCHOR_RIGHT")
 	end
 	local name, _, level, elite, creature_type, respawntime, lastseen = core:GetMobByCoord(mapFile, coord)
-	print("tt name ",name) 
-	print("tt level ",level) 
-	print("tt elite ",elite) 
-	print("tt creature_type ",creature_type) 
-	print("tt respawntime ",respawntime) 
-	print("tt lastseen ",lastseen) 
 	tooltip:AddLine(name)
 	tooltip:AddDoubleLine(("%s%s"):format(level or '??', elite and '+' or ''), creature_type or UNKNOWN)
 	if respawntime then

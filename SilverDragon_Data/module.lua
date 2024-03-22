@@ -7,9 +7,9 @@ local R = LibStub("AceLocale-3.0"):GetLocale("SilverDragon_Rares")
 local core = LibStub("AceAddon-3.0"):GetAddon("SilverDragon")
 local module = core:NewModule("Data")
 
-function module:Import()
+function module:Import(server)
 	if not self.GetDefaults then return end
-	local defaults = self:GetDefaults()
+	local defaults = self:GetDefaults(server)
 	local gdb = core.db.global
 	local mob_count = 0
 	for zone, mobs in pairs(defaults) do
