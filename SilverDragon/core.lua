@@ -24,10 +24,11 @@ function addon:OnInitialize()
 			mob_count = {
 				['*'] = 0,
 			},
+			mob_respawntime  = {},
 		},
 		profile = {
 			scan = 0.5, -- scan interval, 0 for never
-			delay = 600, -- number of seconds to wait between recording the same mob
+			delay = 120, -- number of seconds to wait between recording the same mob
 			cache_tameable = true, -- whether to alert for tameable mobs found through cache-scanning
 			mouseover = true,
 			targets = true,
@@ -115,12 +116,12 @@ function addon:SaveMob(zone, name, x, y, level, elite, creature_type, force, uns
 	return newloc
 end
 
--- Returns num_locs, level, is_elite, creature_type, last_seen, times_seen, mob_id, is_tameable
+-- Returns num_locs, level, is_elite, creature_type, last_seen, times_seen, mob_id, is_tameable, respawntime
 function addon:GetMob(zone, name)
 	if not (zone and name and globaldb.mobs_byzone[zone][name]) then
 		return 0, 0, false, UNKNOWN, nil, 0, nil, nil
 	end
-	return #globaldb.mob_locations[name], globaldb.mob_level[name], globaldb.mob_elite[name], BCT[globaldb.mob_type[name]], globaldb.mobs_byzone[zone][name], globaldb.mob_count[name], globaldb.mob_id[name], globaldb.mob_tameable[name]
+	return #globaldb.mob_locations[name], globaldb.mob_level[name], globaldb.mob_elite[name], BCT[globaldb.mob_type[name]], globaldb.mobs_byzone[zone][name], globaldb.mob_count[name], globaldb.mob_id[name], globaldb.mob_tameable[name], globaldb.mob_respawntime[name]
 end
 
 -- Returns name, addon:GetMob(zone, name)
@@ -144,6 +145,7 @@ function addon:DeleteMob(zone, name)
 	globaldb.mob_type[name] = nil
 	globaldb.mob_count[name] = nil
 	globaldb.mob_locations[name] = nil
+	globaldb.mob_respawntime[name] = nil
 end
 
 function addon:DeleteAllMobs()
