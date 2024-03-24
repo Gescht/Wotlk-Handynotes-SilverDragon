@@ -25,7 +25,7 @@ function dataobject:OnEnter()
 	end
 
 	tooltip = LibQTip:Acquire("SilverDragonTooltip", 6, "LEFT", "CENTER", "RIGHT", "CENTER", "RIGHT", "RIGHT")
-	tooltip:AddHeader("Name", "Level", "Type", "Count", "Last Seen")
+	tooltip:AddHeader("Name", "Level", "Type","Respawn", "Count", "Last Seen")
 	
 	local n = 0
 	for name in pairs(core.db.global.mobs_byzone[zone]) do
