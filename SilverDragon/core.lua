@@ -363,8 +363,10 @@ function addon:GetPlayerLocation()
 		end
 		C, Z = C2, Z2
 	end
+	-- we are not in an instance, but not in one of the know zones
+	-- afaik, this is only the case in pre dungeon zones, like Deadmines or Blackrock Mountain
 	if not (continent_list[C] and continent_list[C][Z]) then
-		return
+		return BZR[GetRealZoneText()], 0, 0
 	end
 	return continent_list[C][Z], x, y
 end
