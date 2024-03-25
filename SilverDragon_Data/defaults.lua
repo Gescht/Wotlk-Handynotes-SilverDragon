@@ -590,7 +590,6 @@ function module:GetDefaults(server)
 			["Deeb"] = {id=1911,level=12,creature_type="Humanoid",respawn="5 minutes",locations = {63302750,},},
 			["Fellicent's Shade"] = {id=10358,level=12,creature_type="Undead",respawn="1.5 hours",locations = {75006050,},},
 			["Sri'skulk"] = {id=10359,level=13,creature_type="Beast",respawn="20 hours",locations = {88205140,},},
-			["Krethis Shadowspinner"] = {id=12433,level=15,creature_type="Beast",respawn="12 hours",locations = {24007970,},},
 		},
 		["Dun Morogh"] = {
 			["Edan the Howler"] = {id=1137,level=9,creature_type="Humanoid",respawn="25 minutes",locations = {39004750,42204940,},},
@@ -605,6 +604,7 @@ function module:GetDefaults(server)
 			["Warlord Kolkanis"] = {id=5808,level=9,creature_type="Humanoid",respawn="4 hours",locations = {47907740,},},
 			["Watch Commander Zalaphil"] = {id=5809,level=9,creature_type="Humanoid",respawn="2.75 hours",locations = {59205770,},},
 			["Captain Flat Tusk"] = {id=5824,level=11,creature_type="Humanoid",elite=true,respawn="4 hours",locations = {38705400,},},
+			["Felweaver Scornn"] = {id=5822,level=11,creature_type="Humanoid",elite=true,locations = {52800900,},},
 			["Death Flayer"] = {id=5823,level=11,creature_type="Beast",respawn="4 hours",locations = {38205110,},},
 		},
 		["Mulgore"] = {
@@ -621,14 +621,11 @@ function module:GetDefaults(server)
 			["Narg the Taskmaster"] = {id=79,level=10,creature_type="Humanoid",respawn="1 hour",locations = {40907750,},},
 			["Thuros Lightfingers"] = {id=61,level=11,creature_type="Humanoid",respawn="2 hours",locations = {52705890,28605990,29205800,30805710,50508290,50908310,89907950,89307930,},},
 			["Fedfennel"] = {id=472,level=12,creature_type="Humanoid",respawn="2 hours",locations = {68104490,66504090,67903960,69103890,},},
-			["Lupos"] = {id=521,level=23,creature_type="Beast",respawn="5 hours",locations = {45609690,50009640,48509570,46909980,44809940,43309990,41309790,39609890,38609770,35809730,37009740,},},
+			["Gruff Swiftbite"] = {id=100,level=12,creature_type="Humanoid",respawn="2 hours",locations = {26308670,27908820,26109190,25408980,27708600,},},
 		},
 		["Eversong Woods"] = {
 			["Tregla"] = {id=16855,level=10,creature_type="Humanoid",respawn="1 hour",locations = {70407220,},},
 			["Eldinarcus"] = {id=16854,level=11,creature_type="Elemental",respawn="1 hour",locations = {69804990,},},
-		},
-		["Orgrimmar"] = {
-			["Felweaver Scornn"] = {id=5822,level=11,creature_type="Humanoid",elite=true,respawn="4 hours",locations = {76508350,},},
 		},
 		["The Barrens"] = {
 			["Dishu"] = {id=5865,level=13,creature_type="Beast",respawn="2.75 hours",locations = {50901820,},},
@@ -636,10 +633,8 @@ function module:GetDefaults(server)
 			["Rathorian"] = {id=3470,level=15,creature_type="Demon",respawn="5.52 hours",locations = {48001920,},},
 			["Stonearm"] = {id=5837,level=15,creature_type="Humanoid",respawn="5.52 hours",locations = {42002460,},},
 			["Rocklance"] = {id=5841,level=17,creature_type="Humanoid",elite=true,respawn="5.5 hours",locations = {56504160,},},
-			["Boahn"] = {id=3672,level=17,creature_type="Humanoid",respawn="2.75 hours",locations = {49103390,},},
 			["Brokespear"] = {id=5838,level=17,creature_type="Humanoid",respawn="5.52 hours",locations = {57104120,},},
 			["Snort the Heckler"] = {id=5829,level=17,creature_type="Beast",respawn="5.52 hours",locations = {41202220,},},
-			["Trigore the Lasher"] = {id=3652,level=17,creature_type="Beast",respawn="2.5 days",locations = {48303310,},},
 			["Foreman Grills"] = {id=5835,level=18,creature_type="Humanoid",respawn="2.75 hours",locations = {56300820,},},
 			["Sister Rathtalon"] = {id=5830,level=19,creature_type="Humanoid",elite=true,respawn="12 hours",locations = {40001520,},},
 			["Takk the Leaper"] = {id=5842,level=19,creature_type="Beast",elite=true,respawn="12 hours",locations = {59600830,},},
@@ -663,13 +658,12 @@ function module:GetDefaults(server)
 			["Hagg Taurenbane"] = {id=5859,level=26,creature_type="Humanoid",elite=true,respawn="12 hours",locations = {43208320,},},
 			["Brontus"] = {id=5827,level=27,creature_type="Beast",elite=true,respawn="30 minutes",locations = {44108030,},},
 			["Captain Gerogg Hammertoe"] = {id=5851,level=27,creature_type="Humanoid",elite=true,respawn="12 hours",locations = {49408370,},},
-			["Harb Foulmountain"] = {id=14426,level=27,creature_type="Humanoid",respawn="2 hours",locations = {44309420,},},
 			["Ambassador Bloodrage"] = {id=7895,level=35,creature_type="Undead",respawn="2.75 hours",locations = {47709070,},},
-			["Darkmist Widow"] = {id=4380,level=38,creature_type="Beast",respawn="1 hour",locations = {51606450,},},
 		},
 		["Silverpine Forest"] = {
 			["Gorefang"] = {id=12431,level=13,creature_type="Beast",respawn="12 hours",locations = {59500760,},},
 			["Old Vicejaw"] = {id=12432,level=14,creature_type="Beast",respawn="12 hours",locations = {53805190,},},
+			["Krethis Shadowspinner"] = {id=12433,level=15,creature_type="Beast",locations = {35500820,},},
 			["Dalaran Spellscribe"] = {id=1920,level=21,creature_type="Humanoid",respawn="12 hours",locations = {63506330,},},
 			["Ravenclaw Regent"] = {id=2283,level=22,creature_type="Undead",respawn="2 hours",locations = {58206990,},},
 			["Rot Hide Bruiser"] = {id=1944,level=22,creature_type="Undead",respawn="12 hours",locations = {64702300,},},
@@ -698,13 +692,16 @@ function module:GetDefaults(server)
 		["Westfall"] = {
 			["Master Digger"] = {id=1424,level=15,creature_type="Humanoid",respawn="2 hours",locations = {46501900,},},
 			["Slark"] = {id=519,level=15,creature_type="Humanoid",respawn="2 hours",locations = {31602600,},},
-			["Brainwashed Noble"] = {id=596,level=18,creature_type="Humanoid",respawn="1 hour",locations = {44007830,},},
-			["Marisa du'Paige"] = {id=599,level=18,creature_type="Humanoid",respawn="1 hour",locations = {42207990,},},
 			["Sergeant Brashclaw"] = {id=506,level=18,creature_type="Humanoid",respawn="2.5 hours",locations = {36903190,},},
 			["Brack"] = {id=520,level=19,creature_type="Humanoid",respawn="2.5 hours",locations = {27304450,},},
 			["Leprithus"] = {id=572,level=19,creature_type="Undead",respawn="20 hours",locations = {41702930,57008050,},},
 			["Foe Reaper 4000"] = {id=573,level=20,creature_type="Mechanical",respawn="5 hours",locations = {44803540,51406840,50506930,50106710,47706890,47306700,46406600,46206320,53906310,50806520,40604960,40105190,38405430,37905200,36005130,38004940,33205290,34305130,44504550,44703890,43903670,42603550,44703270,46303340,46903550,48603010,49202740,50502660,51402540,52502290,51102220,49402190,50701930,53502760,54302580,62405800,63805950,65006130,63406200,62106240,61206010,},},
 			["Vultros"] = {id=462,level=26,creature_type="Beast",respawn="1.08 days",locations = {50604350,40606050,36806250,46105770,45706010,44104620,45404390,46804420,51102380,54802320,63305700,63905820,65505870,62007550,61507390,62607420,},},
+		},
+		["Wailing Caverns"] = {
+			["Boahn"] = {id=3672,level=17,creature_type="Humanoid",locations = {},},
+			["Trigore the Lasher"] = {id=3652,level=17,creature_type="Beast",locations = {},},
+			["Deviate Faerie Dragon"] = {id=5912,level=19,creature_type="Dragonkin",elite=true,locations = {},},
 		},
 		["Redridge Mountains"] = {
 			["Ribchaser"] = {id=14271,level=17,creature_type="Humanoid",respawn="2.5 hours",locations = {16106530,15406640,14106550,13606250,14306110,14806110,16506300,19606170,30808050,32408250,34408320,32308300,30908390,29508400,27708440,},},
@@ -715,19 +712,17 @@ function module:GetDefaults(server)
 			["Boulderheart"] = {id=14273,level=25,creature_type="Giant",respawn="1 hour",locations = {88906680,},},
 			["Rohh the Silent"] = {id=947,level=26,creature_type="Humanoid",respawn="14 hours",locations = {75503960,83905930,83905750,82405620,81305570,82705390,84205100,78804070,78703550,76403780,73903550,75802970,76104730,},},
 			["Kazon"] = {id=584,level=27,creature_type="Humanoid",respawn="6 hours",locations = {34900830,36901200,36400940,35000670,},},
-			["Omgorn the Lost"] = {id=8201,level=50,creature_type="Humanoid",respawn="12 hours",locations = {85902870,65305060,},},
+		},
+		["The Deadmines"] = {
+			["Brainwashed Noble"] = {id=596,level=18,creature_type="Humanoid",locations = {},},
+			["Marisa du'Paige"] = {id=599,level=18,creature_type="Humanoid",locations = {},},
+			["Miner Johnson"] = {id=3586,level=19,creature_type="Humanoid",elite=true,locations = {},},
 		},
 		["Ghostlands"] = {
 			["Dr. Whitherlimb"] = {id=22062,level=18,creature_type="Undead",respawn="8 hours",locations = {34404900,},},
 		},
 		["Bloodmyst Isle"] = {
 			["Fenissa the Assassin"] = {id=22060,level=18,creature_type="Humanoid",respawn="1 hour",locations = {21805820,39906210,},},
-		},
-		["Wailing Caverns"] = {
-			["Deviate Faerie Dragon"] = {id=5912,level=19,creature_type="Dragonkin",elite=true,locations = {},},
-		},
-		["The Deadmines"] = {
-			["Miner Johnson"] = {id=3586,level=19,creature_type="Humanoid",elite=true,locations = {},},
 		},
 		["Shadowfang Keep"] = {
 			["Deathsworn Captain"] = {id=3872,level=21,creature_type="Undead",elite=true,locations = {},},
@@ -749,13 +744,13 @@ function module:GetDefaults(server)
 			["Mist Howler"] = {id=10644,level=22,creature_type="Beast",respawn="10 hours",locations = {18602980,22603490,28602210,22303060,},},
 			["Mugglefin"] = {id=10643,level=23,creature_type="Humanoid",respawn="2.75 hours",locations = {19404270,},},
 			["Branch Snapper"] = {id=10641,level=25,creature_type="Elemental",respawn="2.75 hours",locations = {46504430,},},
+			["Rorgish Jowl"] = {id=10639,level=25,creature_type="Humanoid",respawn="5.55 hours",locations = {35803660,},},
 			["Akkrilus"] = {id=3773,level=26,creature_type="Demon",respawn="2.75 hours",locations = {25606350,},},
 			["Eck'alom"] = {id=10642,level=27,creature_type="Elemental",respawn="5.55 hours",locations = {52807000,},},
 			["Oakpaw"] = {id=10640,level=27,creature_type="Humanoid",respawn="5.55 hours",locations = {56006280,},},
 			["Ursol'lok"] = {id=12037,level=31,creature_type="Beast",respawn="2.75 hours",locations = {83404850,},},
 			["Terrowulf Packlord"] = {id=3792,level=32,creature_type="Humanoid",respawn="2.75 hours",locations = {49803960,},},
 			["Prince Raze"] = {id=10647,level=32,creature_type="Demon",respawn="5.55 hours",locations = {81604850,},},
-			["Varo'then's Ghost"] = {id=6118,level=48,creature_type="Undead",respawn="10 minutes",locations = {97904790,},},
 		},
 		["Alterac Mountains"] = {
 			["Jimmy the Bleeder"] = {id=14281,level=23,creature_type="Humanoid",respawn="20 hours",locations = {58606930,},},
@@ -767,6 +762,14 @@ function module:GetDefaults(server)
 			["Lo'Grosh"] = {id=2453,level=39,creature_type="Humanoid",respawn="20 hours",locations = {52104690,},},
 			["Narillasanz"] = {id=2447,level=44,creature_type="Dragonkin",elite=true,respawn="14.77 hours",locations = {73706530,},},
 		},
+		["Duskwood"] = {
+			["Lupos"] = {id=521,level=23,creature_type="Beast",respawn="5 hours",locations = {70602660,67302680,64502670,62002490,61202280,38302520,36402440,34302960,32602590,31602900,29702970,27102720,24902850,23602690,21502650,20002640,},},
+			["Naraxis"] = {id=574,level=27,creature_type="Beast",respawn="1 hour",locations = {86404760,},},
+			["Lord Malathrom"] = {id=503,level=31,creature_type="Undead",respawn="2 hours",locations = {20302880,22102840,22802890,24702940,24503120,25903090,21102720,},},
+			["Commander Felstrom"] = {id=771,level=32,creature_type="Undead",respawn="6 hours",locations = {18003790,13203620,14803650,16303740,18503570,16503570,16803430,14803330,14403270,14003460,},},
+			["Fenros"] = {id=507,level=32,creature_type="Humanoid",respawn="7 hours",locations = {61703680,61503900,60704070,60804370,62204590,61204990,63905180,63704710,},},
+			["Nefaru"] = {id=534,level=34,creature_type="Humanoid",respawn="7 hours",locations = {63508370,74307790,61808140,},},
+		},
 		["Wetlands"] = {
 			["Ma'ruk Wyrmscale"] = {id=2090,level=23,creature_type="Humanoid",respawn="2 hours",locations = {48107470,},},
 			["Gnawbone"] = {id=14425,level=24,creature_type="Humanoid",respawn="23 hours",locations = {30103070,31502970,31403290,35202740,37802970,38903410,},},
@@ -776,7 +779,6 @@ function module:GetDefaults(server)
 			["Garneg Charskull"] = {id=2108,level=29,creature_type="Humanoid",respawn="2 hours",locations = {38404610,},},
 			["Sludginn"] = {id=14433,level=30,creature_type="Beast",respawn="20 hours",locations = {12606750,},},
 			["Razormaw Matriarch"] = {id=1140,level=31,creature_type="Beast",respawn="7 hours",locations = {69902920,},},
-			["Prince Nazjak"] = {id=2779,level=41,creature_type="Humanoid",respawn="1.33 days",locations = {28400540,},},
 		},
 		["Blackfathom Deeps"] = {
 			["Lorgus Jett"] = {id=12902,level=24,creature_type="Humanoid",locations = {},},
@@ -784,7 +786,9 @@ function module:GetDefaults(server)
 		["Hillsbrad Foothills"] = {
 			["Creepthess"] = {id=14279,level=24,creature_type="Beast",respawn="20 hours",locations = {38605840,},},
 			["Big Samras"] = {id=14280,level=27,creature_type="Beast",respawn="12 hours",locations = {86003990,},},
+			["Tamra Stormpike"] = {id=14275,level=28,creature_type="Humanoid",elite=true,respawn="20 hours",locations = {71208050,},},
 			["Ro'Bark"] = {id=14278,level=28,creature_type="Humanoid",respawn="6 hours",locations = {65606000,},},
+			["Scargil"] = {id=14276,level=30,creature_type="Humanoid",respawn="12 hours",locations = {29507370,},},
 			["Lady Zephris"] = {id=14277,level=33,creature_type="Humanoid",respawn="12 hours",locations = {64507970,},},
 		},
 		["The Stockade"] = {
@@ -795,23 +799,17 @@ function module:GetDefaults(server)
 			["Blind Hunter"] = {id=4425,level=27,creature_type="Beast",elite=true,locations = {},},
 			["Earthcaller Halmgar"] = {id=4842,level=27,creature_type="Humanoid",elite=true,locations = {},},
 		},
-		["Duskwood"] = {
-			["Naraxis"] = {id=574,level=27,creature_type="Beast",respawn="1 hour",locations = {86404760,},},
-			["Lord Malathrom"] = {id=503,level=31,creature_type="Undead",respawn="2 hours",locations = {20302880,22102840,22802890,24702940,24503120,25903090,},},
-			["Commander Felstrom"] = {id=771,level=32,creature_type="Undead",respawn="6 hours",locations = {18003790,13203620,14803650,16303740,18503570,16503570,16803430,14803330,14403270,14003460,},},
-			["Fenros"] = {id=507,level=32,creature_type="Humanoid",respawn="7 hours",locations = {61703680,61503900,60704070,60804370,62204590,61204990,63905180,63704710,},},
-			["Nefaru"] = {id=534,level=34,creature_type="Humanoid",respawn="7 hours",locations = {63508370,74307790,61808140,},},
-		},
-		["Gnomeregan"] = {
-			["Dark Iron Ambassador"] = {id=6228,level=28,creature_type="Humanoid",elite=true,locations = {},},
-		},
 		["Thousand Needles"] = {
+			["Harb Foulmountain"] = {id=14426,level=27,creature_type="Humanoid",locations = {32602680,},},
 			["Gibblesnik"] = {id=14427,level=28,creature_type="Humanoid",respawn="2.75 hours",locations = {55605040,},},
 			["Achellios the Banished"] = {id=5933,level=31,creature_type="Humanoid",respawn="2 hours",locations = {22703750,},},
 			["Heartrazor"] = {id=5934,level=32,creature_type="Beast",elite=true,respawn="12 hours",locations = {16704150,},},
 			["Vile Sting"] = {id=5937,level=35,creature_type="Beast",elite=true,respawn="12 hours",locations = {70607290,},},
 			["Silithid Ravager"] = {id=4132,level=36,creature_type="Beast",respawn="2 hours",locations = {68408230,},},
 			["Ironeye the Invincible"] = {id=5935,level=37,creature_type="Beast",elite=true,respawn="12 hours",locations = {87207840,},},
+		},
+		["Gnomeregan"] = {
+			["Dark Iron Ambassador"] = {id=6228,level=28,creature_type="Humanoid",elite=true,locations = {},},
 		},
 		["Desolace"] = {
 			["Crusty"] = {id=18241,level=32,creature_type="Beast",respawn="6 hours",locations = {31201840,},},
@@ -820,7 +818,6 @@ function module:GetDefaults(server)
 			["Accursed Slitherblade"] = {id=14229,level=35,creature_type="Humanoid",respawn="1.08 days",locations = {42201900,},},
 			["Hissperak"] = {id=14227,level=37,creature_type="Beast",respawn="2.75 hours",locations = {52905010,},},
 			["Kaskk"] = {id=14226,level=40,creature_type="Demon",respawn="2.75 hours",locations = {51208610,},},
-			["Cursed Centaur"] = {id=11688,level=43,creature_type="Humanoid",respawn="7.5 hours",locations = {30506070,},},
 		},
 		["Scarlet Monastery"] = {
 			["Azshir the Sleepless"] = {id=6490,level=32,creature_type="Undead",elite=true,locations = {},},
@@ -836,18 +833,18 @@ function module:GetDefaults(server)
 			["Molok the Crusher"] = {id=2604,level=39,creature_type="Humanoid",respawn="15 hours",locations = {53807960,},},
 			["Geomancer Flintdagger"] = {id=2609,level=40,creature_type="Humanoid",respawn="2 hours",locations = {82803220,},},
 			["Zalas Witherbark"] = {id=2605,level=40,creature_type="Humanoid",respawn="2.92 days",locations = {69207970,66808010,67907870,67308090,},},
+			["Prince Nazjak"] = {id=2779,level=41,creature_type="Humanoid",locations = {19409020,},},
 			["Foulbelly"] = {id=2601,level=42,creature_type="Humanoid",elite=true,locations = {},},
 		},
 		["Badlands"] = {
-			["War Golem"] = {id=2751,level=36,creature_type="Elemental",respawn="14 hours",locations = {49401210,45403350,},},
-			["Broken Tooth"] = {id=2850,level=37,creature_type="Beast",respawn="8 hours",locations = {59702940,59702690,45803650,},},
-			["Digmaster Shovelphlange"] = {id=7057,level=38,creature_type="Humanoid",elite=true,respawn="12 hours",locations = {34602310,},},
+			["War Golem"] = {id=2751,level=36,creature_type="Elemental",respawn="14 hours",locations = {49401210,45403350,52501950,},},
+			["Broken Tooth"] = {id=2850,level=37,creature_type="Beast",respawn="8 hours",locations = {59702940,59702690,45803650,53701560,},},
 			["Barnabus"] = {id=2753,level=38,creature_type="Beast",respawn="1.17 days",locations = {46307430,38906800,55806770,},},
 			["Siege Golem"] = {id=2749,level=40,creature_type="Elemental",elite=true,respawn="1.17 days",locations = {19905660,15905920,11605910,08606180,05505950,15806530,19106060,24605560,24505010,29204740,31505000,35704760,36304170,40003980,},},
 			["Shadowforge Commander"] = {id=2744,level=40,creature_type="Humanoid",respawn="13 hours",locations = {41802690,40302630,39902780,40702890,},},
-			["7:XT"] = {id=14224,level=41,creature_type="Mechanical",respawn="1.75 days",locations = {55108360,54205350,23805240,28706870,19607830,13606700,},},
+			["7:XT"] = {id=14224,level=41,creature_type="Mechanical",respawn="1.75 days",locations = {55108360,54205350,23805240,28706870,19607830,13606700,02808030,},},
 			["Anathemus"] = {id=2754,level=45,creature_type="Giant",elite=true,respawn="20 hours",locations = {23707420,},},
-			["Rumbler"] = {id=2752,level=45,creature_type="Elemental",respawn="7 hours",locations = {14708930,13908610,04808180,},},
+			["Rumbler"] = {id=2752,level=45,creature_type="Elemental",respawn="7 hours",locations = {14708930,13908610,04808180,02008050,},},
 			["Zaricotl"] = {id=2931,level=55,creature_type="Beast",elite=true,respawn="7 hours",locations = {56106170,35406650,34505370,},},
 		},
 		["Razorfen Downs"] = {
@@ -858,6 +855,7 @@ function module:GetDefaults(server)
 			["Drogoth the Roamer"] = {id=14231,level=37,creature_type="Elemental",respawn="7.5 hours",locations = {38801640,41002190,},},
 			["Lord Angler"] = {id=14236,level=37,creature_type="Humanoid",respawn="1.25 days",locations = {54706340,},},
 			["Ripscale"] = {id=14233,level=37,creature_type="Beast",respawn="10.55 hours",locations = {42005530,49205740,},},
+			["Darkmist Widow"] = {id=4380,level=38,creature_type="Beast",locations = {31102040,},},
 			["Dart"] = {id=14232,level=38,creature_type="Beast",respawn="5 hours",locations = {47901950,},},
 			["Oozeworm"] = {id=14237,level=38,creature_type="Beast",respawn="2.08 days",locations = {36906210,},},
 			["Hayoc"] = {id=14234,level=39,creature_type="Beast",respawn="1 hour",locations = {52006290,},},
@@ -878,12 +876,15 @@ function module:GetDefaults(server)
 			["Lost One Cook"] = {id=1106,level=37,creature_type="Humanoid",respawn="6 hours",locations = {65202280,64002280,62502330,61802190,60902430,62402090,},},
 			["Lost One Chieftain"] = {id=763,level=39,creature_type="Humanoid",respawn="14 hours",locations = {62002120,60502290,60102030,61602280,63802080,},},
 			["Molt Thorn"] = {id=14448,level=42,creature_type="Elemental",respawn="1 hour",locations = {34503880,43303400,41203160,39703600,37303700,35603140,33603500,30903660,27903270,26603850,29104240,28404590,25804820,28405250,30505100,32604810,32904450,37004440,38203980,},},
-			["Fingat"] = {id=14446,level=43,creature_type="Humanoid",respawn="13 hours",locations = {63508440,64107980,61708130,65608660,65708170,},},
+			["Fingat"] = {id=14446,level=43,creature_type="Humanoid",respawn="13 hours",locations = {63508440,64107980,61708130,65608660,65708170,61608690,61208410,},},
 			["Gilmorian"] = {id=14447,level=43,creature_type="Humanoid",respawn="1.17 days",locations = {94006300,},},
 			["Lord Captain Wyrmak"] = {id=14445,level=45,creature_type="Dragonkin",elite=true,respawn="7 hours",locations = {78204310,76806700,78506690,81606890,83606690,80006000,80205740,81005430,82605220,81404520,79904100,75103750,73903480,76003290,69303910,67503880,62804330,59603890,},},
 			["Jade"] = {id=1063,level=47,creature_type="Dragonkin",respawn="1.67 days",locations = {69505580,69905390,},},
 			["Veyzhak the Cannibal"] = {id=5399,level=48,creature_type="Humanoid",respawn="8 hours",locations = {78704450,},},
 			["Zekkis"] = {id=5400,level=48,creature_type="Undead",respawn="8 hours",locations = {77804120,},},
+		},
+		["Uldaman"] = {
+			["Digmaster Shovelphlange"] = {id=7057,level=38,creature_type="Humanoid",elite=true,locations = {},},
 		},
 		["The Hinterlands"] = {
 			["Old Cliff Jumper"] = {id=8211,level=42,creature_type="Beast",respawn="20 hours",locations = {11905370,},},
@@ -907,9 +908,10 @@ function module:GetDefaults(server)
 			["Antilus the Soarer"] = {id=5347,level=48,creature_type="Beast",respawn="2.75 hours",locations = {54007300,},},
 			["Bloodroar the Stalker"] = {id=5346,level=48,creature_type="Humanoid",respawn="2.75 hours",locations = {55105780,},},
 			["Arash-ethis"] = {id=5349,level=49,creature_type="Beast",respawn="2.75 hours",locations = {44802500,},},
-			["Skarr the Unbreakable"] = {id=11498,level=58,creature_type="Humanoid",elite=true,respawn="6 hours",locations = {62802860,},},
-			["Mushgog"] = {id=11447,level=60,creature_type="Elemental",elite=true,respawn="6 hours",locations = {63003090,},},
-			["The Razza"] = {id=11497,level=60,creature_type="Beast",elite=true,respawn="6 hours",locations = {63002950,},},
+		},
+		["Maraudon"] = {
+			["Cursed Centaur"] = {id=11688,level=43,creature_type="Humanoid",locations = {},},
+			["Meshlok the Harvester"] = {id=12237,level=46,creature_type="Elemental",elite=true,locations = {},},
 		},
 		["Tanaris"] = {
 			["Murderous Blisterpaw"] = {id=8208,level=43,creature_type="Beast",respawn="2.75 hours",locations = {52303330,},},
@@ -919,6 +921,7 @@ function module:GetDefaults(server)
 			["Kregg Keelhaul"] = {id=8203,level=47,creature_type="Humanoid",respawn="2.75 hours",locations = {73204870,},},
 			["Cyclok the Mad"] = {id=8202,level=48,creature_type="Humanoid",respawn="2.75 hours",locations = {41305470,},},
 			["Haarka the Ravenous"] = {id=8205,level=50,creature_type="Beast",respawn="2.75 hours",locations = {53307380,},},
+			["Omgorn the Lost"] = {id=8201,level=50,creature_type="Humanoid",respawn="12 hours",locations = {38705560,40407280,47006560,},},
 			["Soriid the Devourer"] = {id=8204,level=50,creature_type="Beast",respawn="2.75 hours",locations = {34104470,},},
 			["Bone Witch"] = {id=16380,level=61,creature_type="Undead",locations = {},},
 			["Spirit of the Damned"] = {id=16379,level=61,creature_type="Undead",locations = {},},
@@ -929,9 +932,6 @@ function module:GetDefaults(server)
 			["Zerillis"] = {id=10082,level=45,creature_type="Humanoid",elite=true,locations = {},},
 			["Dustwraith"] = {id=10081,level=46,creature_type="Humanoid",elite=true,locations = {},},
 		},
-		["Maraudon"] = {
-			["Meshlok the Harvester"] = {id=12237,level=46,creature_type="Elemental",elite=true,locations = {},},
-		},
 		["Searing Gorge"] = {
 			["Faulty War Golem"] = {id=8279,level=46,creature_type="Elemental",respawn="14 hours",locations = {45906780,32106140,33204650,43404180,60305800,},},
 			["Shleipnarr"] = {id=8280,level=47,creature_type="Demon",respawn="20 hours",locations = {58605660,},},
@@ -940,7 +940,6 @@ function module:GetDefaults(server)
 			["Slave Master Blackheart"] = {id=8283,level=50,creature_type="Humanoid",respawn="6 hours",locations = {42402310,46202570,41404360,42803550,41903690,},},
 			["Smoldar"] = {id=8278,level=50,creature_type="Elemental",respawn="2 hours",locations = {29506240,},},
 			["Highlord Mastrogonde"] = {id=8282,level=51,creature_type="Humanoid",elite=true,respawn="7 hours",locations = {14503720,29302800,30502590,29502640,},},
-			["Scarshield Quartermaster"] = {id=9046,level=55,creature_type="Humanoid",respawn="2 minutes",locations = {43309920,},},
 		},
 		["Blasted Lands"] = {
 			["Mojo the Twisted"] = {id=8296,level=48,creature_type="Humanoid",respawn="6 hours",locations = {45201600,45301640,42101490,41701180,},},
@@ -958,6 +957,7 @@ function module:GetDefaults(server)
 		},
 		["Azshara"] = {
 			["The Evalcharr"] = {id=8660,level=48,creature_type="Beast",respawn="2 hours",locations = {17906560,},},
+			["Varo'then's Ghost"] = {id=6118,level=48,creature_type="Undead",locations = {13207420,},},
 			["Gatekeeper Rageroar"] = {id=6651,level=50,creature_type="Humanoid",respawn="10.5 hours",locations = {38303210,},},
 			["Antilos"] = {id=6648,level=50,creature_type="Beast",respawn="2.75 hours",locations = {16605410,},},
 			["General Fangferror"] = {id=6650,level=51,creature_type="Humanoid",respawn="2.75 hours",locations = {41305400,},},
@@ -990,20 +990,9 @@ function module:GetDefaults(server)
 		["Stormwind City"] = {
 			["Sewer Beast"] = {id=3581,level=50,creature_type="Beast",respawn="1 day",locations = {71204880,71106800,45805640,58304170,43607460,58307860,},},
 		},
-		["Burning Steppes"] = {
-			["The Behemoth"] = {id=8924,level=50,creature_type="Humanoid",respawn="1.25 days",locations = {21401910,},},
-			["Deathmaw"] = {id=10077,level=53,creature_type="Beast",respawn="7 hours",locations = {87405050,82703030,75503290,81505670,},},
-			["Gorgon'och"] = {id=9604,level=54,creature_type="Humanoid",respawn="1.25 days",locations = {80504150,77904150,79404540,79804230,77204310,},},
-			["Hahk'Zor"] = {id=9602,level=54,creature_type="Humanoid",respawn="14 hours",locations = {80504800,81904820,81704380,81704190,},},
-			["Terrorspark"] = {id=10078,level=55,creature_type="Demon",respawn="1.17 days",locations = {41904650,42304470,45904350,49104310,68403140,63603780,51204290,69003160,},},
-			["Malfunctioning Reaver"] = {id=8981,level=56,creature_type="Elemental",respawn="14 hours",locations = {79202970,90004600,88103180,85805710,88605730,},},
-			["Thauris Balgarr"] = {id=8978,level=57,creature_type="Humanoid",respawn="6 hours",locations = {54203910,55503610,60903650,61703760,65004280,65704370,66104190,71303690,71003580,},},
-			["Gruklash"] = {id=8979,level=59,creature_type="Humanoid",respawn="6 hours",locations = {42105480,44105630,39703590,40603460,40703260,15203040,41505390,},},
-			["Hematos"] = {id=8976,level=60,creature_type="Dragonkin",elite=true,respawn="1.75 days",locations = {22406000,},},
-			["Volchan"] = {id=10119,level=60,creature_type="Giant",elite=true,respawn="12 hours",locations = {74303780,},},
-			["Bone Witch"] = {id=16380,level=61,creature_type="Undead",locations = {},},
-			["Spirit of the Damned"] = {id=16379,level=61,creature_type="Undead",locations = {},},
-			["Lumbering Horror"] = {id=14697,level=71,creature_type="Undead",locations = {},},
+		["Blackrock Mountain"] = {
+			["The Behemoth"] = {id=8924,level=50,creature_type="Humanoid",locations = {},},
+			["Scarshield Quartermaster"] = {id=9046,level=55,creature_type="Humanoid",locations = {},},
 		},
 		["Blackrock Depths"] = {
 			["Pyromancer Loregrain"] = {id=9024,level=52,creature_type="Humanoid",locations = {},},
@@ -1018,7 +1007,6 @@ function module:GetDefaults(server)
 			["Dreadwhisper"] = {id=1849,level=58,creature_type="Undead",locations = {},},
 			["Foreman Marcrid"] = {id=1844,level=58,creature_type="Humanoid",respawn="20 hours",locations = {49003270,},},
 			["Scarlet Smith"] = {id=1885,level=59,creature_type="Humanoid",respawn="20 hours",locations = {43601290,},},
-			["Nerubian Overseer"] = {id=16184,level=60,creature_type="Undead",elite=true,respawn="12 hours",locations = {67801930,},},
 			["Scarlet Executioner"] = {id=1841,level=60,creature_type="Humanoid",elite=true,respawn="20 hours",locations = {45701880,},},
 			["Scarlet Judge"] = {id=1837,level=60,creature_type="Humanoid",respawn="20 hours",locations = {42201850,},},
 			["Scarlet Interrogator"] = {id=1838,level=61,creature_type="Humanoid",elite=true,respawn="20 hours",locations = {45201530,},},
@@ -1026,8 +1014,22 @@ function module:GetDefaults(server)
 			["The Husk"] = {id=1851,level=62,creature_type="Elemental",respawn="1.33 days",locations = {62203630,},},
 			["Scarlet High Clerist"] = {id=1839,level=63,creature_type="Humanoid",elite=true,respawn="20 hours",locations = {55102310,},},
 		},
+		["Burning Steppes"] = {
+			["Deathmaw"] = {id=10077,level=53,creature_type="Beast",respawn="7 hours",locations = {87405050,82703030,75503290,81505670,},},
+			["Gorgon'och"] = {id=9604,level=54,creature_type="Humanoid",respawn="1.25 days",locations = {80504150,77904150,79404540,79804230,77204310,},},
+			["Hahk'Zor"] = {id=9602,level=54,creature_type="Humanoid",respawn="14 hours",locations = {80504800,81904820,81704380,81704190,},},
+			["Terrorspark"] = {id=10078,level=55,creature_type="Demon",respawn="1.17 days",locations = {41904650,42304470,45904350,49104310,68403140,63603780,51204290,69003160,},},
+			["Malfunctioning Reaver"] = {id=8981,level=56,creature_type="Elemental",respawn="14 hours",locations = {79202970,90004600,88103180,85805710,88605730,},},
+			["Thauris Balgarr"] = {id=8978,level=57,creature_type="Humanoid",respawn="6 hours",locations = {54203910,55503610,60903650,61703760,65004280,65704370,66104190,71303690,71003580,},},
+			["Gruklash"] = {id=8979,level=59,creature_type="Humanoid",respawn="6 hours",locations = {42105480,44105630,39703590,40603460,40703260,15203040,41505390,},},
+			["Hematos"] = {id=8976,level=60,creature_type="Dragonkin",elite=true,respawn="1.75 days",locations = {22406000,},},
+			["Volchan"] = {id=10119,level=60,creature_type="Giant",elite=true,respawn="12 hours",locations = {74303780,},},
+			["Bone Witch"] = {id=16380,level=61,creature_type="Undead",locations = {},},
+			["Spirit of the Damned"] = {id=16379,level=61,creature_type="Undead",locations = {},},
+			["Lumbering Horror"] = {id=14697,level=71,creature_type="Undead",locations = {},},
+		},
 		["Eastern Plaguelands"] = {
-			["Duggan Wildhammer"] = {id=10817,level=55,creature_type="Humanoid",respawn="20 hours",locations = {35206410,16305880,31807490,},},
+			["Duggan Wildhammer"] = {id=10817,level=55,creature_type="Humanoid",respawn="20 hours",locations = {35206410,16305880,31807490,12607300,},},
 			["Deathspeaker Selendre"] = {id=10827,level=56,creature_type="Humanoid",respawn="20 hours",locations = {79703990,},},
 			["Gish the Unmoving"] = {id=10825,level=56,creature_type="Undead",respawn="20 hours",locations = {68804730,},},
 			["Hed'mush the Rotting"] = {id=10821,level=57,creature_type="Undead",respawn="20 hours",locations = {62704550,},},
@@ -1035,6 +1037,7 @@ function module:GetDefaults(server)
 			["Warlord Thresh'jin"] = {id=10822,level=58,creature_type="Humanoid",respawn="20 hours",locations = {63701450,},},
 			["High General Abbendis"] = {id=10828,level=59,creature_type="Humanoid",elite=true,respawn="12 hours",locations = {82507950,},},
 			["Zul'Brin Warpbranch"] = {id=10823,level=59,creature_type="Humanoid",respawn="20 hours",locations = {66801270,},},
+			["Nerubian Overseer"] = {id=16184,level=60,creature_type="Undead",elite=true,locations = {05603300,},},
 			["Ranger Lord Hawkspear"] = {id=10824,level=60,creature_type="Humanoid",respawn="12 hours",locations = {47601420,},},
 			["Bone Witch"] = {id=16380,level=61,creature_type="Undead",locations = {},},
 			["Spirit of the Damned"] = {id=16379,level=61,creature_type="Undead",locations = {},},
@@ -1080,7 +1083,10 @@ function module:GetDefaults(server)
 			["Stonespine"] = {id=10809,level=60,creature_type="Undead",elite=true,locations = {},},
 		},
 		["Dire Maul"] = {
+			["Skarr the Unbreakable"] = {id=11498,level=58,creature_type="Humanoid",elite=true,locations = {},},
 			["Tsu'zee"] = {id=11467,level=59,creature_type="Undead",elite=true,locations = {},},
+			["Mushgog"] = {id=11447,level=60,creature_type="Elemental",elite=true,locations = {},},
+			["The Razza"] = {id=11497,level=60,creature_type="Beast",elite=true,locations = {},},
 		},
 		["Hellfire Peninsula"] = {
 			["Mekthorg the Wild"] = {id=18677,level=61,creature_type="Humanoid",respawn="10 minutes",locations = {44505970,70807170,},},
@@ -1088,7 +1094,7 @@ function module:GetDefaults(server)
 			["Vorakem Doomspeaker"] = {id=18679,level=62,creature_type="Demon",respawn="10 minutes",locations = {74003790,72005680,64603140,42303250,},},
 		},
 		["Zangarmarsh"] = {
-			["Bog Lurker"] = {id=18682,level=63,creature_type="Elemental",respawn="10 minutes",locations = {60307350,33202460,},},
+			["Bog Lurker"] = {id=18682,level=63,creature_type="Elemental",respawn="10 minutes",locations = {60307350,33202460,87108820,},},
 			["Coilfang Emissary"] = {id=18681,level=63,creature_type="Humanoid",respawn="10 minutes",locations = {26304710,},},
 			["Marticar"] = {id=18680,level=63,creature_type="Beast",respawn="10 minutes",locations = {49703060,},},
 		},
@@ -1098,7 +1104,7 @@ function module:GetDefaults(server)
 			["Crippler"] = {id=18689,level=65,creature_type="Undead",respawn="10 minutes",locations = {37905570,},},
 		},
 		["Nagrand"] = {
-			["Goretooth"] = {id=17144,level=65,creature_type="Beast",respawn="10 minutes",locations = {40304900,33405110,57602900,},},
+			["Goretooth"] = {id=17144,level=65,creature_type="Beast",respawn="10 minutes",locations = {40304900,33405110,57602900,76307920,},},
 			["Bro'Gaz the Clanless"] = {id=18684,level=66,creature_type="Humanoid",locations = {},},
 			["Voidhunter Yar"] = {id=18683,level=68,creature_type="Demon",respawn="10 minutes",locations = {37806690,},},
 		},
@@ -1141,7 +1147,7 @@ function module:GetDefaults(server)
 			["Seething Hate"] = {id=32429,level=73,creature_type="Beast",elite=true,respawn="8 hours",locations = {32304580,41205470,30504410,},},
 			["Syreian the Bonecarver"] = {id=32438,level=73,creature_type="Humanoid",elite=true,respawn="8 hours",locations = {66404150,64103580,66903870,69803360,65103090,68702670,},},
 			["Arcturis"] = {id=38453,level=74,creature_type="Beast",elite=true,respawn="11 hours",locations = {31005590,},},
-			["Grocklar"] = {id=32422,level=74,creature_type="Giant",elite=true,respawn="8 hours",locations = {24905570,13907010,11604250,21907280,20505510,},},
+			["Grocklar"] = {id=32422,level=74,creature_type="Giant",elite=true,respawn="8 hours",locations = {24905570,13907010,11604250,21907280,20505510,12205560,},},
 		},
 		["Sholazar Basin"] = {
 			["Aotona"] = {id=32481,level=75,creature_type="Beast",elite=true,respawn="8 hours",locations = {57406610,54305110,44306890,39905840,42705200,44205250,},},
@@ -1151,18 +1157,18 @@ function module:GetDefaults(server)
 		["Zul'Drak"] = {
 			["Griegen"] = {id=32471,level=75,creature_type="Undead",elite=true,respawn="8 hours",locations = {21107670,17607030,22906220,26807070,14105640,22107030,25107620,},},
 			["Terror Spinner"] = {id=32475,level=76,creature_type="Beast",elite=true,respawn="8 hours",locations = {71802880,72202900,78603350,},},
-			["Gondria"] = {id=33776,level=77,creature_type="Beast",elite=true,respawn="4 hours",locations = {69504810,62606210,77604320,62804300,78307020,},},
+			["Gondria"] = {id=33776,level=77,creature_type="Beast",elite=true,respawn="4 hours",locations = {69504810,62606210,77604320,62804300,78307020,67007830,},},
 			["Zul'drak Sentinel"] = {id=32447,level=77,creature_type="Elemental",elite=true,respawn="8 hours",locations = {45505930,21308270,},},
 		},
 		["Icecrown"] = {
 			["Putridus the Ancient"] = {id=32487,level=80,creature_type="Giant",elite=true,respawn="8 hours",locations = {46606460,53303860,63304350,66505350,67305690,},},
 			["High Thane Jorfus"] = {id=32501,level=80,creature_type="Undead",elite=true,respawn="8 hours",locations = {48907830,70404100,34006940,},},
 			["Hildana Deathstealer"] = {id=32495,level=80,creature_type="Undead",elite=true,respawn="1 hour",locations = {28404580,30802550,36602310,58506280,},},
-			["Time-Lost Proto Drake"] = {id=32491,level=80,creature_type="Dragonkin",elite=true,respawn="4 hours",locations = {91405580,},},
 		},
 		["The Storm Peaks"] = {
 			["Dirkee"] = {id=32500,level=80,creature_type="Mechanical",elite=true,respawn="8 hours",locations = {42603810,41405160,41606130,70704770,},},
 			["Skoll"] = {id=35189,level=80,creature_type="Beast",elite=true,respawn="11 hours",locations = {46206530,},},
+			["Time-Lost Proto Drake"] = {id=32491,level=80,creature_type="Dragonkin",elite=true,locations = {29906550,},},
 			["Vyragosa"] = {id=32630,level=80,creature_type="Dragonkin",elite=true,locations = {},},
 		},
 		["Dalaran"] = {
