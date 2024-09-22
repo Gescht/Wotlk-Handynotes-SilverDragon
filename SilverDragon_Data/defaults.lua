@@ -1171,9 +1171,9 @@ function module:GetDefaults(server)
 			["Time-Lost Proto Drake"] = {id=32491,level=80,creature_type="Dragonkin",elite=true,locations = {29906550,},},
 			["Vyragosa"] = {id=32630,level=80,creature_type="Dragonkin",elite=true,locations = {},},
 		},
-		["Dalaran"] = {
+		--[[["Dalaran"] = {
 			["Vern"] = {id=32435,level=80,creature_type="Beast",respawn="5 minutes",locations = {55803800,},},
-		},
+		},]]
 	}
 	
 	if server == "tc" then
